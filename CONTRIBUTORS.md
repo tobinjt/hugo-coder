@@ -35,3 +35,5 @@
 - [Thomas Vochten](https://github.com/thomasvochten)
 - [Caspar Krieger](https://www.asparck.com)
 - [D_DAndrew](https://d-dandrew.github.io)
+- [Wataru Mizukami](https://github.com/tarumzu)
+- [Yudi Widiyanto](https://github.com/yudiwdynto)
