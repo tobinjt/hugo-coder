@@ -38,3 +38,5 @@
 - [Wataru Mizukami](https://github.com/tarumzu)
 - [Yudi Widiyanto](https://github.com/yudiwdynto)
 - [Łukasz Mróz](https://github.com/mrozlukasz)
+- [Jia "Jay" Tan](https://github.com/j7an)
+- [Ryan](https://github.com/alrayyes)
