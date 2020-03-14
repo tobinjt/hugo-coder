@@ -21,6 +21,7 @@ disqusShortname = "yourdiscussshortname"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
     avatarurl = "images/avatar.jpg"
+    #gravatar = "john.doe@example.com"
     footercontent = "Enter a text here."
 
     dateformat = "January 2, 2006"
@@ -39,16 +40,22 @@ disqusShortname = "yourdiscussshortname"
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorscheme = "light"
+    colorscheme = "auto"
 
     # Series see also post count
     maxSeeAlsoItems = 5
 
     # Custom CSS
     custom_css = []
-    
+
     # Custom JS
     custom_js = []
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    serverURL = "analytics.example.com"
 
 [taxonomies]
   category = "categories"
