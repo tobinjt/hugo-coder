@@ -100,6 +100,14 @@ Follow [these steps](https://gohugo.io/templates/internal/#configure-google-anal
     connectionString = "connectionstring" # https://docs.microsoft.com/en-us/azure/azure-monitor/app/sdk-connection-string
 ```
 
+#### microanalytics.io
+
+```toml
+[params.microAnalytics]
+    id = "ABCDE"
+    dnt = "false" # respect DNT tracker, "true" by default
+```
+
 ### Commenting Systems
 
 Comments are displayed within post pages, but can be disabled with `disableComments` front-matter.
@@ -130,7 +138,7 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
 ```toml
 [params.giscus] # https://giscus.app
   repo = ""
-  repoID = "" 
+  repoID = ""
   category = ""
   categoryID = ""
   mapping = ""
@@ -311,9 +319,9 @@ disqusShortname = "yourdiscussshortname"
   colorScheme = "auto"
   hidecolorschemetoggle = false
 
-  customCSS = ["css/custom.css"]
-  customSCSS = ["scss/custom.scss"]
-  customJS = ["js/custom.js"]
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
 
 [taxonomies]
   category = "categories"
