@@ -134,3 +134,6 @@
 - [Todor Bogosavljević](https://github.com/tbx1b)
 - [Kemal Akkoyun](https://github.com/kakkoyun)
 - [Igetin](https://github.com/Igetin)
+- [Kirill Che.](https://github.com/g4s8)
+- [iron3oxide](https://github.com/iron3oxide)
+  
