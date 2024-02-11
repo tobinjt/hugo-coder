@@ -115,7 +115,9 @@ These are all the parameters used by `hugo-coder` theme.
 | faviconSVG                    | string | No       | Custom path to a SCG favicon.                    | `"/img/favicon.svg"`             | `"/img/favicon.svg"`                             |
 | favicon_32                    | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                       |
 | favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
-| touchIcon                     | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
+| touchIcon                     | string | No       | Custom path to an apple-touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
+| mask_icon                     | string | No       | Custom path to a mask-icon                      | `"/images/safari-pinned-tab.svg"` | `"/images/safari-pinned-tab.svg"`                 |
+| mask_icon_color                     | string | No       | Custom color for mask-icon color                      | `"#5bbad5"` | `"#5bbad5"`                 |
 | since                         | string | No       | Date shown in the footer before now year         |                                  | `"2020"`                                         |
 | maxSeeAlsoItems               | number | No       | Series see also post count                       | `5`                              | `10`                                             |
 | commit                        | string | No       | Show the last git commit in the footer           |                                  | `"https://github.com/luizdepra/hugo-coder/tree/"`|
@@ -138,7 +140,7 @@ Social Icons are optional. To use them you will need to set at least all the fol
 | Configuration  | Type   | Required | Description                              | Example                         |
 | -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
 | name           | string | Yes      | Icon name.                               | `"Github"`                      |
-| icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"`                |
+| icon           | string | Yes      | FontAwesome icon classes.                | `"fa-brands fa-github"`         |
 | weight         | int    | Yes      | Icon order.                              | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
 
@@ -147,17 +149,17 @@ An example:
 ```toml
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-2x"
+  icon = "fa-brands fa-github fa-2x"
   weight = 1
   url = "https://github.com/johndoe/"
 [[params.social]]
   name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  icon = "fa-brands fa-gitlab fa-2x"
   weight = 2
   url = "https://gitlab.com/johndoe/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  icon = "fa-brands fa-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
 ```
@@ -171,6 +173,7 @@ Menu Items are optional. To use them you will need to set all the following requ
 | name           | string | Yes      | Menu Item name.                          | `"Posts"`                       |
 | weight         | int    | Yes      | Menu Item order.                         | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"/posts/"`                     |
+| class          | string | No       | Menu Item extra class attribute.         | `"menu-item"`                   |
 | target         | string | No       | URL target attribute.                    | `"_blank"`                      |
 | rel            | string | No       | URL rel attribute.                       | `"alternate"`                   |
 | type           | string | No       | URL type attribute.                      | `"application/rss+xml"`         |
@@ -202,7 +205,7 @@ CSP stands for [Content Security Policy](https://developers.google.com/web/funda
 | objectsrc      | string list | Yes      |             | `["'self'"]`                    |
 | stylesrc       | string list | Yes      |             | `["'self'"]`                    |
 | scriptsrc      | string list | Yes      |             | `["'self'"]`                    |
-| prefetchsrc    | string list | Yes      |             | `["'self'"]`                    |
+| connectsrc     | string list | Yes      |             | `["'self'"]`                    |
 
 An example:
 
@@ -229,7 +232,8 @@ An example:
     "'unsafe-inline'",
     "https://www.google-analytics.com"
   ]
-  prefetchsrc = ["'self'"]
+  # connect-src directive – defines valid targets for XMLHttpRequest (AJAX), WebSockets or EventSource
+  connectsrc = ["'self'"]
 ```
 
 ## Complete Example
@@ -282,17 +286,17 @@ style = "github-dark"
 # Social links
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-2x"
+  icon = "fa-brands fa-github fa-2x"
   weight = 1
   url = "https://github.com/johndoe/"
 [[params.social]]
   name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  icon = "fa-brands fa-gitlab fa-2x"
   weight = 2
   url = "https://gitlab.com/johndoe/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  icon = "fa-brands fa-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
 
